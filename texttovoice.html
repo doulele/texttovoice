@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>百度语音测试</title>
+  <link rel="stylesheet" type="text/css" href="texttovoice.css">
+</head>
+<body>
+  <div id="textSpeak"><div id="textSpeakBox"><div id="file"><div id='txtname'>请选择上传的txt文件</div><div id="uploadButton"><span id="cover">上传文件</span><input type="file"id="chose"onchange="getFile()"></div></div><div id="contor"><input type="button"value="播放"id="start"class="paly"><input type="button"value="暂停"id="pause"class="paly"><div id="langSelect"class="contorSelect"><span>语言</span><div id="hiddenscroll"><div id="langSelectBox"class=""></div></div></div><div id="rateSelect"class="contorSelect"><span>倍速</span><div id="rateSelectBox"class=""><p class="rateSelectOption">0.50</p><p class="rateSelectOption">0.75</p><p class="rateSelectOption">1.00</p><p class="rateSelectOption">1.25</p><p class="rateSelectOption">1.50</p><p class="rateSelectOption">1.75</p><p class="rateSelectOption">2.00</p></div></div><div id="volume"><span>音量</span><div id="volumeBox"><div id="volumeContor"><span id="volumePoint"></span></div></div></div></div></div></div>
+</body>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./texttovoice.js"></script>
+</html>

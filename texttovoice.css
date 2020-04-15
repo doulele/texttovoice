@@ -1,0 +1,278 @@
+/*公共*/
+  input{
+    outline: none;
+    border: 0 ;
+    background: none;
+  }
+  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 30px;
+    color: rgb(98,99,101);
+    border:0;
+    background: none;
+    outline: none;
+    text-align: center;
+    text-align-last: center;
+    cursor: pointer;
+  }
+  select>option{
+    background: red;
+    border:0;
+  }
+/*项目大盒子*/
+  #textSpeak{
+    width: 89vw;
+    height: 44.5vw;
+    max-width: 740px;
+    max-height: 400px;
+    background: lightblue;
+    overflow: hidden;
+    user-select: none;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  #textSpeakBox{
+    width: 70vw;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+/*上传文件*/
+  #txtname{
+    width: 100%;
+    height: 17.5vw; 
+    max-height: 150px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgb(169,169,169);
+    color: #bbb;
+    font-size: 1.785em;
+    text-align: center;
+    line-height: 150px;
+  }
+  #uploadButton{
+    margin: 10px 0 10px 0;
+    text-align: center;
+    word-spacing: -8px;
+    transform: translateX(-50px);
+  }
+  #chose{
+    width: 12.027vw;
+    height: 6.013vw;
+    max-width: 100px;
+    max-height: 50px;
+    font-size: 1.4285em;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+    cursor: pointer;
+  }
+  #cover{
+    transform: translateX(100%);
+    width: 12.027vw;
+    height: 6.013vw;
+    max-width: 100px;
+    max-height:50px;
+    font-size: 1.285em;
+    line-height: 50px;
+    color: rgb(13,202,222);
+    background: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+/*播放条*/
+  #contor{
+    width: 100%;
+    height: 6.013vw;
+    max-height: 50px;
+    color: rgb(98,99,101);
+    text-align: right;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgb(169,169,169);
+    background: radial-gradient(circle,#fff,#bbb);
+    position: relative;
+  }
+  #contor input{
+    width: 9.621vw;
+    height: 6.013vw;
+    max-width: 80px;
+    max-height: 50px;
+    cursor: pointer;
+  }
+/*播放*/
+  .paly{
+    font-size: 1.142em;
+    position: absolute;
+    left: 0;
+    color: rgb(117,117,117);
+  }
+  #pause{
+    display: none;
+  }
+/*音量*/
+  #volume{
+    width: 7.216vw;
+    height: 6.013vw;
+    max-width: 60px;
+    max-height: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    color: rgb(117,117,117);
+  }
+  #volumeBox{
+    width: 1.143vw;
+    height: 8.4189vw;
+    max-width: 12px;
+    max-height: 70px;
+    top:-125%;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: none;
+  }
+  #volumeContor{
+    width: 3px;
+    height: 100%;
+    left:50%;
+    border-radius: 3px;
+    transform: translateX(-50%);
+    position: absolute;
+    background:rgb(98,99,101);
+  }
+  #volumePoint{
+    width: 1.443vw;
+    height: 1.443vw;
+    max-width: 12px;
+    max-height: 12px;
+    border-radius: 12px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background:rgb(90,91,93);
+  }
+/*自定义select*/
+  .contorSelect{
+    width: 7.216vw;
+    height: 6.013vw;
+    max-width: 60px;
+    max-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(117,117,117);
+    float: right;
+    position: relative;
+  }
+/*倍速*/
+  #rateSelectBox{
+    width: 7.216vw;
+    height: 21.047vw; 
+    max-width: 60px;
+    max-height: 175px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 4px rgb(169,169,169);
+    background-color: rgba(226,226,226,.2);
+    display: none;
+  }
+ .rateSelectOption{
+    width: 7.216vw;
+    height: 3.006vw;
+    max-width: 60px;
+    max-height: 25px;
+    line-height:25px;
+    margin: 0;
+    float: left;
+    font-size: 0.857em;
+    overflow: hidden;
+  }
+/*语言*/
+  #langSelect{
+    width: 9.621vw;
+    max-width: 80px;
+  }
+  #hiddenscroll{/*隐藏scroll*/
+    width: 39.929vw;
+    height: 9.621vw;
+    max-width:332px;
+    max-height: 80px;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgb(169,169,169);
+    background-color: rgba(226,226,226,.2);
+    display: none;
+  }
+  #langSelectBox{
+    width: 42.094vw;
+    height: 9.621vw;
+    max-width: 350px;
+    max-height: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .langSelectOption{
+    width: 100%;
+    height: 3.006vw;
+    max-height: 25px;
+    line-height: 25px;
+    text-align:right;
+    margin: 0;
+    float: left;
+    font-size: 0.857em;
+    overflow: hidden;
+  }
+  
+@media (max-width: 480px) {
+  #textSpeak{
+    font-size: 9px;
+  }
+  #textSpeakBox{
+    margin: 4vw auto;
+  }
+  #txtname{
+    line-height: 17.5vw;
+  }
+   #uploadButton{
+    margin: 1.5vw 0 1.5vw 0;
+    transform: translateX(-6.013vw);
+  }
+  #cover{
+    line-height: 6.013vw;
+  }
+  #volume{
+    line-height: 6.013vw;
+  }
+  #volumeContor{
+    width: 1px;
+  }
+  .contorSelect{
+    line-height: 6.013vw;
+  }
+ .rateSelectOption{
+  line-height: 3.006vw;
+ }
+  #hiddenscroll{
+    top: 6.013vw;
+  }
+  .langSelectOption{
+    line-height: 3.006
+  }
+}
+@media (max-width: 320px) {
+   #textSpeak{
+    font-size: 6px;
+  }
+}
