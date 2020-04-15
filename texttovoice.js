@@ -40,16 +40,14 @@ var speaktTimer = setInterval(function(){
     }
   }
 //获取本地缓存数据
-var locstoTxt = window.localStorage.getItem('txt');
-var locstoName = window.localStorage.getItem('txtName');
-var locstoIndex = window.localStorage.getItem('endIndex');
-console.log(locstoIndex,locstoName,locstoTxt);
-locstoName?  $('#txtname').text(locstoName):null;
-if (locstoTxt) {
-  var goOn = locstoTxt.slice(locstoIndex,locstoTxt.length);
-  console.log(goOn);
-  translateSound(goOn);
-}
+  var locstoTxt = window.localStorage.getItem('txt');
+  var locstoName = window.localStorage.getItem('txtName');
+  var locstoIndex = window.localStorage.getItem('endIndex');
+  locstoName?  $('#txtname').text(locstoName):null;
+  if (locstoTxt) {
+    var goOn = locstoTxt.slice(locstoIndex,locstoTxt.length);
+    translateSound(goOn);
+  }
 //文本转换语音
   function translateSound(myTxt){
     spSynUtt = new SpeechSynthesisUtterance(myTxt);//创建SpeechSynthesisUtterance实例
@@ -150,7 +148,6 @@ if (locstoTxt) {
       $('.langSelectOption').on('click',langchose)
     }
   },500)
-  /**/
 //在点击页面的时候下拉框消失,注意要在时间捕获阶段触发
   document.addEventListener('click',function(ev){
     $('#volumeBox').css({'display':'none'});
@@ -160,36 +157,3 @@ if (locstoTxt) {
     }
     $('#hiddenscroll').css({'display':'none'});
   },true)
-
-
-
-
-/* let spSynUtt = new SpeechSynthesisUtterance(myTxt);
-    var voiceList = spSynts.getVoices();
-    console.log(voiceList)
-    for (var i = 0; i < voiceList.length; i++) {
-      console.log(voiceList[i].lang)
-    }
-    console.log(spSynUtt.volume = 0.5);
-    console.log(spSynUtt.rate = 2);
-    console.log(spSynUtt.pitch = 1);
-    spSynUtt.onstart=function(){
-      console.log('开始合成')
-    }
-    spSynUtt.onpause=function(){
-      console.log('暂停')
-    }
-     spSynUtt.onresume =function(){
-      console.log('重新开始')
-    } 
-    spSynUtt.onend =function(){
-      console.log('合成结束')
-    }
-    //spSynUtt.voice = spSynts.getVoices()[3];
-    spSynts.speak(spSynUtt);
-    document.querySelector('#start').onclick=function(){
-      spSynts.resume();
-    }
-    document.querySelector('#stop').onclick=function(){
-      spSynts.pause();
-    }*/
